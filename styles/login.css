@@ -1,0 +1,50 @@
+/* Cores */
+:root {
+    --main-text-color: #324156;
+    --button-background-color: #0cdac3;
+    --active: white;
+    --login-background-color: #ecf4f1;
+}
+
+html,
+body,
+.h-100 {
+    height: 100%;
+}
+
+.gradient-form {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--login-background-color)
+}
+
+form .custom-button {
+    background-color: var(--button-background-color);
+    width: 45%;
+    border: none;
+}
+
+.text-card {
+color:var(--main-text-color);
+font-size: 1.2em;
+}
+
+.gradient-custom-2 {
+    background: linear-gradient(to right, #07e9d6, #91e7d9, #36dddd, #059292);
+}
+
+/*Responsividade*/
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}

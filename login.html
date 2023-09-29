@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/login.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="gradient-form">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <div class="card rounded-3 text-black">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <div class="card-body p-md-5 mx-md-4">
+
+                                    <!-- Icon da Easy Carros acima do login-->
+                                    <div class="text-center">
+                                        <img src="images/icon.png" style="width: 200px;" alt="logo">
+                                    </div>
+
+                                    <!--Form login-->
+                                    <form id="loginForm">
+                                        <div class="form-outline mb-4">
+                                            <input type="email" id="form2Example11" class="form-control"
+                                                placeholder="Email" required />
+                                            <label class="form-label" for="form2Example11"></label>
+                                            <div class="invalid-feedback">
+                                                Por favor, insira um email válido.
+                                            </div>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="text" id="form2Example22" class="form-control"
+                                                onfocus="this.type='password'" placeholder="Senha" required />
+                                            <label class="form-label" for="form2Example22"></label>
+                                            <div class="invalid-feedback">
+                                                A senha é obrigatória.
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center pt-1 mb-5 pb-1">
+                                            <button class="btn btn-lg btn-success custom-button" type="button"
+                                                onclick="validateForm()">Entrar</button>
+                                            <a class="text-muted" href="#!">Esqueceu a sua senha?</a>
+                                        </div>
+
+                                        <div class="d-flex align-items-center justify-content-center pb-4">
+                                            <p class="mb-0 me-2">Ainda não tem uma Conta?</p>
+                                            <a href="queroSaberMais.html" class="btn btn-link">Entre em Contato</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!--Texto do card-->
+                            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                                <div class=" px-3 py-4 p-md-5 mx-md-4">
+                                    <h1 class="mb-4 text-white"> Uma plataforma, várias soluções!</h1>
+                                    <p class="text-card">
+                                        Normalmente, gerenciar uma frota requer muito tempo e diferentes fornecedores
+                                        para uma gestão eficiente. Pensando em facilitar a vida dos vários
+                                        empreendedores ligados a mobilidade, criamos um hub que centraliza soluções
+                                        essenciais para as locadoras de veículos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

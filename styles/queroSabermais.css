@@ -1,0 +1,29 @@
+/* Cores */
+:root {
+    --main-text-color: #324156;
+    --button-background-color: #1aae9d;
+    --active: white;
+    --login-background-color: #ecf4f1;
+}
+
+
+html,
+body,
+.h-100 {
+    height: 100%;
+    color: var(--main-text-color);
+}
+
+.gradient-form {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, white, white,#c2eeee);
+}
+
+form .custom-button {
+    background-color: var(--button-background-color);
+    width: 100%;
+    border: none;
+  }
